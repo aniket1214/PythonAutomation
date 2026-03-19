@@ -133,7 +133,6 @@ split_words = string.split(" ")
 
 print("Longest word is: ", max(split_words, key=len))
 print("Smallest word is: ", min(split_words, key=len))
-
 '''
 
 # Q8. Print most simultaneously repeated characters in a string.
@@ -188,7 +187,7 @@ print(list)
 # Output = “IqaTooS”
 '''
 input = "SqaTool"
-
+print(input)
 print(input[-1]+input[1:-1]+input[0]) #lqaTooS
 
 '''
@@ -381,7 +380,7 @@ print(output)
 # Input String1 = “Very Good Morning, How are You”
 # Input String1 = “You are a Good student, keep it up”
 # Output = “You Good are”
-
+'''
 input1 = "Very Good Morning, How are You"
 input2 = "You are a Good student, keep it up"
 output = []
@@ -394,3 +393,27 @@ for char in split_input1:
         output.append(char)
 
 print(" ".join(output))
+'''
+
+# 24). Write a Python program to find the smallest and largest word in a given string.
+# Input = “Learning is a part of life and we strive”
+# Output = “a”, “Learning”
+'''
+input = "Learning is a part of life and we strive"
+split_input = input.split(" ")
+
+print("Smallest word : ",min(split_input, key=len))
+print("Largest word : ",max(split_input, key=len))
+
+'''
+# Check whether the given string is a palindrome (similar) or not.
+# Input= sqatoolssqatools
+# Output= Given string is not a palindrome
+'''
+input = "sqatoolssqatools"
+rev = input[::-1]
+if input == rev:
+    print("Given string is a palindrome")
+else:
+    print("Given string is not a palindrome")
+'''
